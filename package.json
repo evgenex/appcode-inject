@@ -1,0 +1,19 @@
+{
+  "name": "appcode-inject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "test": "jest"
+  },
+  "author": "Eugene Silovs",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "cypress": "^6.0.1",
+    "jest": "^26.6.3"
+  }
+}

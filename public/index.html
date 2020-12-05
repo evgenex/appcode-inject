@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>APCODE inject</title>
+</head>
+<body id="content">
+        <h1>APCODE inject test</h1>
+        <button type="button" id="but1">add a normal div</button>
+        <button type="button" id="but2">add a sticky div</button>
+        <p>a new javascript library/script that can be included on a web page and which delivers the requirements specified in parts 1-3</p>
+        <p>try clicking the buttons above</p>
+</body>
+<script type="module">
+        import Apcode from './apcode.js';
+        const APCODE = new Apcode;
+        but1.onclick =()=>{
+            APCODE.inject('p', false);
+        }
+        window.onscroll =()=>{
+            APCODE.scroll();
+        }
+        but2.onclick =()=>{
+            APCODE.inject('p', true);
+        }
+</script>
+</html>
