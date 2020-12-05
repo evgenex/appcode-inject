@@ -12,5 +12,5 @@ app.get('/', function (req, res) {
 
 const port = process.env.PORT || 3000;
 app.listen(port, function () {
-  console.log('myapp listening on port ' + port);
+  console.log('go to http://localhost:3000/ to view it life' + port);
 });
